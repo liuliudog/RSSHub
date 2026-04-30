@@ -5535,6 +5535,25 @@
   },
   "apple.com": {
     "_name": "Apple",
+    "apps": [
+      {
+        "title": "App Update",
+        "docs": "https://docs.rsshub.app/routes/program-update",
+        "source": [
+          "/:country/app/:appSlug/:id",
+          "/:country/app/:id"
+        ],
+        "target": "/apple/apps/update/:country/:id"
+      },
+      {
+        "title": "Price Drop",
+        "docs": "https://docs.rsshub.app/routes/program-update",
+        "source": [
+          "/"
+        ],
+        "target": "/appstore/price/:country/:type/:id"
+      }
+    ],
     "support": [
       {
         "title": "Exchange and Repair Extension Programs",
@@ -5562,25 +5581,6 @@
           "/:region/podcast/:id"
         ],
         "target": "/apple/podcast/:id/:region?"
-      }
-    ],
-    "apps": [
-      {
-        "title": "App Update",
-        "docs": "https://docs.rsshub.app/routes/program-update",
-        "source": [
-          "/:country/app/:appSlug/:id",
-          "/:country/app/:id"
-        ],
-        "target": "/apple/apps/update/:country/:id"
-      },
-      {
-        "title": "Price Drop",
-        "docs": "https://docs.rsshub.app/routes/program-update",
-        "source": [
-          "/"
-        ],
-        "target": "/appstore/price/:country/:type/:id"
       }
     ]
   },
@@ -18784,6 +18784,14 @@
           "/"
         ],
         "target": "/go(_,url)=>{const category=new URL(url).href.match(/mhlw\\.go\\.jp\\/(.*)$/)?.[1]??void 0;return`/mhlw/pdf${category?`/${category}`:\"\"}`}"
+      },
+      {
+        "title": "毎月勤労統計調査 全国調査（月別結果）",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/toukei/list/30-1a.html"
+        ],
+        "target": "/mhlw/monthly-labour-survey"
       }
     ]
   },
@@ -23104,6 +23112,14 @@
   "huggingface.co": {
     "_name": "Huggingface",
     ".": [
+      {
+        "title": "User Likes Activity",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/:user/activity/likes"
+        ],
+        "target": "/huggingface/activity/:user/likes"
+      },
       {
         "title": "Community Articles",
         "docs": "https://docs.rsshub.app/routes/programming",
@@ -35104,16 +35120,6 @@
           "/publish/nongyeqixiang/guowainongyeqixiangyuebao/index.html"
         ],
         "target": "/nmc/publish/nongyeqixiang/guowainongyeqixiangyuebao/index/html"
-      }
-    ],
-    "typhoon": [
-      {
-        "title": "台风海洋 - 台风综合信息",
-        "docs": "https://docs.rsshub.app/routes/forecast",
-        "source": [
-          "/"
-        ],
-        "target": "/nmc/publish/http://typhoon/nmc.cn"
       }
     ],
     ".": [
@@ -49953,7 +49959,7 @@
       }
     ]
   },
-  "zxcs.info": {
+  "zxcs.click": {
     "_name": "知轩藏书",
     ".": [
       {

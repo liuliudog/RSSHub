@@ -624,6 +624,10 @@
   "/app-sales/mostwanted/:time?/:country?": [
     "nczitzk"
   ],
+  "/apple/apps/update/:country/:id/:platform?": [
+    "EkkoG",
+    "nczitzk"
+  ],
   "/apple/design": [
     "jean-jacket"
   ],
@@ -639,10 +643,6 @@
     "Acring"
   ],
   "/apple/security-releases/:language?": [
-    "nczitzk"
-  ],
-  "/apple/apps/update/:country/:id/:platform?": [
-    "EkkoG",
     "nczitzk"
   ],
   "/appleinsider/:category?": [
@@ -4384,6 +4384,9 @@
   "/hudsonrivertrading/blog/:section?": [
     "johan456789"
   ],
+  "/huggingface/activity/:user/likes": [
+    "dotwee"
+  ],
   "/huggingface/blog-community/:sort?": [
     "yuguorui"
   ],
@@ -5666,6 +5669,9 @@
     "TonyRL"
   ],
   "/metmuseum/exhibitions/:state?": [],
+  "/mhlw/monthly-labour-survey": [
+    "TonyRL"
+  ],
   "/mi/golden": [
     "nczitzk"
   ],
